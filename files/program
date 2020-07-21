@@ -21,7 +21,7 @@ from ast import literal_eval
 from kivy.lang import Builder
 from kivy.core.window import Window
 from kivy.config import ConfigParser
-from kivy.logger import PY2
+PY2 = False # from kivy.logger import PY2
 from kivy.clock import Clock
 from kivy.utils import get_hex_from_color
 from kivy.properties import ObjectProperty, StringProperty
