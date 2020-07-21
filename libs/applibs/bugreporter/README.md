@@ -3,7 +3,7 @@ BugReporter
 
 Экран для визуализации текста ошибки выполнения программы.
 
-<img src="https://raw.githubusercontent.com/HeaTTheatR/KivyBugReporter/master/Screenshot.png" 
+<img src="https://raw.githubusercontent.com/HeaTTheatR/KivyBugReporter/master/Screenshot.png"
 align="center"/>
 
 Приложение написанно с использованием фреймворка для  кроссплатформенной разработки <Kivy>.
@@ -115,7 +115,7 @@ def main():
 
         report = BugReporter(
             callback_report=callback_report, txt_report=text_error,
-            icon_background='icon.png'
+            icon_background='data/images/icon.png'
         )
 
         if app:

@@ -39,7 +39,7 @@ from dialogs import card
 
 class NAME_PROJECT(MDApp):
     title = 'NAME_PROJECT'
-    icon = 'icon.png'
+    icon  = 'data/images/icon.png'
     nav_drawer = ObjectProperty()
     lang = StringProperty('en')
 
