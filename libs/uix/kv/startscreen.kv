@@ -21,7 +21,7 @@
         id: action_bar
         background_color: app.theme_cls.primary_color
         title: app.title
-        left_action_items: [['menu', lambda x: nav_drawer.toggle_nav_drawer()]]
+        left_action_items: [['menu', lambda x: nav_drawer.set_state("toggle")]]
         elevation: 10
         md_bg_color: app.theme_cls.primary_color
         pos_hint: {"top": 1}
