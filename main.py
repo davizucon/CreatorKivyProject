@@ -183,22 +183,31 @@ PATH_TO_KIVYMD = os.path.join(PATH_TO_APPLIBS, "KivyMD")
 PATH_TO_KIVYMD_OLD = os.path.join(PATH_TO_APPLIBS, "KivyMD_old")
 
 os.chdir(PATH_TO_APPLIBS)
-os.system("git clone https://github.com/HeaTTheatR/KivyMD")
+
+clone_kivymd = False
 
 try:
-    os.rename(PATH_TO_KIVYMD, PATH_TO_KIVYMD_OLD)
-    shutil.move(os.path.join(PATH_TO_KIVYMD_OLD, "kivymd"), PATH_TO_APPLIBS)
-    Logger.info("Clean KivyMD files ...")
-    shutil.rmtree(PATH_TO_KIVYMD_OLD, onerror=remove_readonly)
+	import kivymd
+except ModuleNotFoundError as e:
+    clone_kivymd = True
+    os.system("git clone https://github.com/HeaTTheatR/KivyMD")
+
+try:
+    if clone_kivymd:
+        os.rename(PATH_TO_KIVYMD, PATH_TO_KIVYMD_OLD)
+        shutil.move(os.path.join(PATH_TO_KIVYMD_OLD, "kivymd"), PATH_TO_APPLIBS)
+        Logger.info("Clean KivyMD files ...")
+        shutil.rmtree(PATH_TO_KIVYMD_OLD, onerror=remove_readonly)
+    else: Logger.info("Use preinstalled KivyMD library")
 except OSError:
     Logger.error("KivyMD library not installed!")
 else:
     Logger.info("KivyMD library installation completed!")
     Logger.info("Installing the Pillow library ...")
     if platform.system().lower().find("win") > -1:
-        os.system("pip install pillow")
+        # os.system("pip install pillow")
         os.system("pip3 install pillow")
     else:
-        os.system("sudo pip install pillow")
+        # os.system("sudo pip install pillow")
         os.system("sudo pip3 install pillow")
     Logger.info("Project {} successfully created!".format(NAME_PROJECT))
