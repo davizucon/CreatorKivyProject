@@ -24,98 +24,98 @@ from .selection import Selection
 
 
 Builder.load_string(
-    """
+"""
 # Окно для ввода текста.
 
-[InputText@ModalView]:
-    size_hint: .8, .4
-    background_color: 0, 0, 0, .2
+# [InputText@ModalView]:
+#     size_hint: .8, .4
+#     background_color: 0, 0, 0, .2
 
-    MDCard:
+#     MDCard:
 
-        BoxLayout:
-            orientation: 'vertical'
-            padding: dp(15)
+#         BoxLayout:
+#             orientation: 'vertical'
+#             padding: dp(15)
 
-            MDLabel:
-                font_style: 'Title'
-                theme_text_color: 'Primary'
-                text: ctx.title
-                halign: 'left'
+#             MDLabel:
+#                 font_style: 'Title'
+#                 theme_text_color: 'Primary'
+#                 text: ctx.title
+#                 halign: 'left'
 
-            MDTextField:
-                id: text_field
-                size_hint: 1, None
-                height: dp(48)
-                hint_text: ctx.hint_text
+#             MDTextField:
+#                 id: text_field
+#                 size_hint: 1, None
+#                 height: dp(48)
+#                 hint_text: ctx.hint_text
 
-            Widget:
-            Widget:
+#             Widget:
+#             Widget:
 
-            AnchorLayout:
-                anchor_x: 'right'
-                size_hint: 1, None
-                height: dp(48)
-                padding: dp(8), dp(8)
-                spacing: dp(4)
+#             AnchorLayout:
+#                 anchor_x: 'right'
+#                 size_hint: 1, None
+#                 height: dp(48)
+#                 padding: dp(8), dp(8)
+#                 spacing: dp(4)
 
-                GridLayout:
-                    rows: 1
-                    size_hint: None, None
-                    height: dp(36)
-                    width: self.minimum_width
+#                 GridLayout:
+#                     rows: 1
+#                     size_hint: None, None
+#                     height: dp(36)
+#                     width: self.minimum_width
 
-                    MDFlatButton:
-                        text: ctx.text_button_ok
-                        on_release: ctx.events_callback(text_field.text)
-                        theme_text_color: 'Custom'
-                        text_color: app.theme_cls.primary_color
+#                     MDFlatButton:
+#                         text: ctx.text_button_ok
+#                         on_release: ctx.events_callback(text_field.text)
+#                         theme_text_color: 'Custom'
+#                         text_color: app.theme_cls.primary_color
 
-                    MDFlatButton:
-                        text: ctx.text_button_cancel
-                        on_release: ctx.events_callback(None)
-                        theme_text_color: 'Custom'
-                        text_color: app.theme_cls.primary_color
+#                     MDFlatButton:
+#                         text: ctx.text_button_cancel
+#                         on_release: ctx.events_callback(None)
+#                         theme_text_color: 'Custom'
+#                         text_color: app.theme_cls.primary_color
 
 # Окно прогресса.
 
-[Progress@ModalView]:
-    size_hint: .8, .4
-    background_color: 0, 0, 0, .2
-    auto_dismiss: False
+# [Progress@ModalView]:
+#     size_hint: .8, .4
+#     background_color: 0, 0, 0, .2
+#     auto_dismiss: False
 
-    MDCard:
-        BoxLayout:
-            orientation: 'vertical'
-            padding: dp(0), dp(10)
+#     MDCard:
+#         BoxLayout:
+#             orientation: 'vertical'
+#             padding: dp(0), dp(10)
 
-            Widget:
+#             Widget:
 
-            MDSpinner:
-                id: progress
-                size_hint: None, None
-                size: dp(46), dp(46)
-                pos_hint: {'center_x': .5}
-                active: True
+#             MDSpinner:
+#                 id: progress
+#                 size_hint: None, None
+#                 size: dp(46), dp(46)
+#                 pos_hint: {'center_x': .5}
+#                 active: True
 
-            Label:
-                id: label
-                text: ctx.text_wait
-                color: ctx.text_color
-                markup: True
-                halign: 'center'
-                size_hint_y: None
-                font_size: '14sp'
-                height: dp(50)
+#             Label:
+#                 id: label
+#                 text: ctx.text_wait
+#                 color: ctx.text_color
+#                 markup: True
+#                 halign: 'center'
+#                 size_hint_y: None
+#                 font_size: '14sp'
+#                 height: dp(50)
 
-            Widget:
+#             Widget:
 
-            MDFlatButton:
-                text: ctx.text_button_cancel
-                pos_hint: {'center_x': .5}
-                theme_text_color: 'Custom'
-                text_color: app.theme_cls.primary_color
-                on_release: ctx.events_callback(ctx.text_button_cancel)
+#             MDFlatButton:
+#                 text: ctx.text_button_cancel
+#                 pos_hint: {'center_x': .5}
+#                 theme_text_color: 'Custom'
+#                 text_color: app.theme_cls.primary_color
+#                 on_release: ctx.events_callback(ctx.text_button_cancel)
 """
 )
 
