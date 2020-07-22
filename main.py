@@ -209,5 +209,5 @@ else:
         os.system("pip3 install pillow")
     else:
         # os.system("sudo pip install pillow")
-        os.system("sudo pip3 install pillow")
+        os.system("pip3 install pillow")
     Logger.info("Project {} successfully created!".format(NAME_PROJECT))
