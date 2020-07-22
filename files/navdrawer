@@ -69,7 +69,7 @@
             spacing: dp(10)
 
             LabelSection:
-                text:  app.translation._('Меню:')
+                text:  app.translation._('МЕНЮ')
                 events_callback: lambda x: x
 
             SingleIconItem:
