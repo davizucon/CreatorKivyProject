@@ -48,30 +48,30 @@ msgstr "Press Back to exit"
 msgid "Замените этот экран на свой"
 msgstr "Create and replace your screen"
 
-#: libs/uix/kv/navdrawer.kv:79
+#: libs/uix/kv/navdrawer.kv:74
 msgid "МЕНЮ"
 msgstr "MENU"
 
+#: libs/uix/kv/navdrawer.kv:79
+msgid "ЯЗЫК"
+msgstr "LANGUAGE"
+
 #: libs/uix/kv/navdrawer.kv:84
-msgid "Плагины"
-msgstr "Plugins"
+msgid "ЛИЦЕНЗИЯ"
+msgstr "LICENSE"
 
 #: libs/uix/kv/navdrawer.kv:89
-msgid "Язык"
-msgstr "Language"
-
-#: libs/uix/kv/navdrawer.kv:94
-msgid "Лицензия"
-msgstr "License"
+msgid "ОКОЛО"
+msgstr "ABOUT"
 
 #: libs/utils/showplugins.py:34 libs/utils/showplugins.py:53
 msgid "Да"
 msgstr "Yes"
 
 #: libs/utils/showplugins.py:104
-msgid "Нет информации о плагине!"
-msgstr "There is no information about the plugin!"
+msgid "Нет информации о плагине"
+msgstr "There is no information about the plugin"
 
 #: libs/utils/showplugins.py:128
-msgid "Нет установленных плагинов!"
-msgstr "No installed plugins!"
+msgid "Нет установленных плагинов"
+msgstr "No installed plugins"

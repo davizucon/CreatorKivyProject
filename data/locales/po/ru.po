@@ -48,20 +48,20 @@ msgstr ""
 msgid "Замените этот экран на свой"
 msgstr ""
 
-#: libs/uix/kv/navdrawer.kv:79
+##: libs/uix/kv/navdrawer.kv:74
 msgid "МЕНЮ"
 msgstr ""
 
+#: libs/uix/kv/navdrawer.kv:79
+msgid "ЯЗЫК"
+msgstr ""
+
 #: libs/uix/kv/navdrawer.kv:84
-msgid "Плагины"
+msgid "ЛИЦЕНЗИЯ"
 msgstr ""
 
 #: libs/uix/kv/navdrawer.kv:89
-msgid "Язык"
-msgstr ""
-
-#: libs/uix/kv/navdrawer.kv:94
-msgid "Лицензия"
+msgid "ОКОЛО"
 msgstr ""
 
 #: libs/utils/showplugins.py:34 libs/utils/showplugins.py:53
@@ -69,9 +69,9 @@ msgid "Да"
 msgstr ""
 
 #: libs/utils/showplugins.py:104
-msgid "Нет информации о плагине!"
+msgid "Нет информации о плагине"
 msgstr ""
 
 #: libs/utils/showplugins.py:128
-msgid "Нет установленных плагинов!"
+msgid "Нет установленных плагинов"
 msgstr ""

@@ -1,3 +1,5 @@
+#:kivy 1.1.0
+
 # -*- coding: utf-8 -*-
 #
 # This file created with KivyCreatorProject
@@ -54,7 +56,7 @@
             height: dp(20)
             width: self.texture_size[0]
             halign: 'left'
-            text: '[b]%s[/b]\n[size=12]VERSION_PROJECT[/size]\n' % app.title
+            text: '[b]%s[/b]\n[size=12]1.0[/size]\n' % app.title
             markup: True
             font_size: '14sp'
 
@@ -74,15 +76,15 @@
 
             SingleIconItem:
                 icon: 'web'
-                text: app.translation._('Язык')
+                text: app.translation._('ЯЗЫК')
                 events_callback: app.select_locale
 
             SingleIconItem:
                 icon: 'language-python'
-                text: app.translation._('Лицензия')
+                text: app.translation._('ЛИЦЕНЗИЯ')
                 events_callback: app.show_license
 
             SingleIconItem:
                 icon: 'information'
-                text: 'About'
+                text: app.translation._('ОКОЛО')
                 events_callback: app.show_about
